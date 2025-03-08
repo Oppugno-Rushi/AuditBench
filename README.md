@@ -25,37 +25,6 @@ This directory contains datasets with manually injected errors in financial tabl
 - **`wrong_table_data.json`**: This file contains financial tables where a single error has been manually introduced per table. The dataset also includes corresponding transaction data and metadata indicating the type of error injected.
 - **`wrong_table_data_multiple_errors.json`**: This file extends the `wrong_table_data.json` dataset by injecting multiple errors into each financial table. It serves as a more challenging benchmark for evaluating the error detection capabilities of LLMs.
 
-## Usage
-
-Follow the steps below to use this repository:
-
-### 1. Install dependencies
-
-```sh
-pip install -r requirements.txt
-```
-
-### 2. Process raw table data
-
-```sh
-cd Raw_table_data
-python process_raw_tables.py
-```
-
-### 3. Generate transaction data
-
-```sh
-cd transaction_data
-python generate_transactions.py
-```
-
-### 4. Insert errors into financial tables
-
-```sh
-cd Error_insertion
-python insert_errors.py
-```
-
 ## Citation
 
 If you use this dataset or refer to our research in your work, please cite our paper:
